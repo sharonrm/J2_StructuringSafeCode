@@ -1,0 +1,50 @@
+-npm start
+-state is used for anything where the data is changing. smart component 
+vs. dumb componenet. a dumb component stays the same on every page
+-any component that needs a state would need a class
+-you may need to share state between components-if you need to access
+-one component from another component you need redux to give you an 
+application level state. 
+
+- you can only return one div element (you can wrap one div around 
+other divs but it must be one return)
+-JSX is syntactic sugar that makes it easier to use react.
+is a preprocessor step that adds XML syntax to JavaScript.
+-in the render above the return you can put any javascript 
+you want
+-rcc tab - to create class based component 
+-rfc tab - to create function based component
+-shift option down - copys line
+-we can pass in properties through our components using
+props.
+
+-you can set default.props just in case there
+isn't anything, you'll have a default value.
+impt + tab will add proptypes import to validate
+
+- you can add in-line styling - eg
+<h1 style {{ color: red, fontSize: 50px}}>{branding}</h1>
+
+- you can also create a specific style sheet for
+each component:
+1. create a file in components called contact.class
+2. and import into contact file -
+import './contact.css'; 
+
+-Installing Boot Strap - npm install bootstrap
+and import - import 'bootstrap/dist/css/bootstrap.min.css';
+- use bootstrap classes e.g. navbar navbar-expand-sm
+
+- ADD STATE - 
+    a. Use a constructor - runs when a component is mounded.
+
+- Event handler - use an arrow function so you don't need to bind anything and
+use e to test events and get info. in ex below you'll find out what was targeted 
+onClick.
+    onShowClick = e => {
+    console.log(e.target);
+  }
+
+  <React.Fragment> is kind of a sudo element so the element won't effect the dom
+  - it removes unnecassary elements
+  
